@@ -1,5 +1,5 @@
 import React from "../../../node_modules/react";
-import "./NavBar.css";
+import "./Footer.css";
 
 function NavBar() {
   return (
@@ -8,18 +8,18 @@ function NavBar() {
         <a className="navbar-brand" href="">
           Set Design
         </a>
-        {/* <a className="navbar-brand" href="">
+        <a className="navbar-brand" href="">
           Art Direction
         </a>
         <a className="navbar-brand" href="">
           Resume
-        </a> */}
+        </a>
         {/* <div>
           <h1>Chris Scheid </h1>
           <h3>WaterScheid.la@gmail.com</h3>
           <h3>(818) 963-0675</h3>
         </div> */}
-        <span class="navbar-text navbar-light bg-light">
+        <span class="navbar-text">
           <div>Chris Scheid</div> <div>WaterScheid.la@gmail.com</div>
           <div> (818) 963-0675</div>
         </span>

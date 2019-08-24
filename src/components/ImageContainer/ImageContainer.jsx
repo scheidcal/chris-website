@@ -49,12 +49,7 @@ class ImageContainer extends Component {
 
     console.log("imageArray", imageArray);
 
-    return (
-      <div>
-        <h4> ImageContainer Placeholder</h4>
-        {imageArray}
-      </div>
-    );
+    return <div class="text-center body-content">{imageArray}</div>;
   }
 }
 

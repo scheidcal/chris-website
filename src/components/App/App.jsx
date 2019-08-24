@@ -12,7 +12,6 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavBar />
-        <p>App component placeholder</p>
         <ImageContainer imageCount={4} imageSrcInterface={new srcInterface()} />
       </React.Fragment>
     );

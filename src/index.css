@@ -1,8 +1,11 @@
 * {
   box-sizing: border-box;
-  background-color: slategray;
 }
 
 body {
-  padding-top: 70px;
+  padding-top: 100px;
+}
+
+.body-content {
+  background-color: slategray;
 }

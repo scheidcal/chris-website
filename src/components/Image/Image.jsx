@@ -18,8 +18,13 @@ function Image(props) {
 
   return (
     <div>
-      <img src={props.src} alt="Alt text here" width="400" height="400" />
-      <p> Image Placeholder {props.id} </p>
+      <img
+        className="mt-2 mb-2 img-fluid"
+        src={props.src}
+        alt="Alt text here"
+        width="1000"
+        height="600"
+      />
     </div>
   );
 }
