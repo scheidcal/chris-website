@@ -13,7 +13,10 @@ class SetDesign extends Component {
   render() {
     // return <div>SetDesign placeholder</div>;
     return (
-      <ImageContainer imageCount={4} imageSrcInterface={new srcInterface()} />
+      <ImageContainer
+        imageCount={12}
+        imageSrcMap={new srcInterface().srcMapSet}
+      />
     );
   }
 }

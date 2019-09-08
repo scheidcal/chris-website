@@ -1,0 +1,8 @@
+.navbar-text h2 {
+  font-weight: bold;
+  color: black;
+}
+.navbar-text div {
+  font-weight: italic;
+  color: black;
+}
