@@ -5,6 +5,7 @@ import Image from "../Image/Image";
 
 // The first 2 or 3 images should be imported
 // All other images should be fetched from the cdn
+// Using https://www.npmjs.com/package/react-lazy-load-image-component
 
 class ImageContainer extends Component {
   state = {
@@ -26,11 +27,11 @@ class ImageContainer extends Component {
     for (let i = 0; i < props.imageCount; i++) {
       let temp = {};
       console.log("i", i);
-      console.log(
-        "props.imageSrcInterface.idToSrcMap[i]",
-        props.imageSrcInterface.idToSrcMap[i]
-      );
-      temp.src = props.imageSrcInterface.idToSrcMap[i];
+      // console.log(
+      //   "props.imageSrcInterface.idToSrcMap[i]",
+      //   props.imageSrcInterface.idToSrcMap[i]
+      // );
+      temp.src = props.imageSrcMap[i];
 
       images.push(temp);
     }
@@ -49,7 +50,9 @@ class ImageContainer extends Component {
 
     console.log("imageArray", imageArray);
 
-    return <div class="text-center body-content">{imageArray}</div>;
+    return (
+      <div className="text-center body-content container">{imageArray}</div>
+    );
   }
 }
 
