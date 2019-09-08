@@ -1,14 +1,15 @@
 import image1 from "../../assets/main-images/1/800.jpg";
 import image2 from "../../assets/main-images/2/800.jpg";
 
+import lowRes from "../../assets/quickImage/1.jpg";
+
 class srcInterface {
-  test = [5, 10, 15, 20, 25];
   urlBase = "https://res.cloudinary.com/waterscheiddesign/";
 
   // Uncomment this (and remove the one below) to display images using the cloud host.
   // For testing we shouldn't do this because it'll eat at the bandwidth limit used
 
-  // idToSrcMap = {
+  // srcMapSet = {
   //   0: image1,
   //   1: image2,
   //   2:
@@ -27,12 +28,44 @@ class srcInterface {
 
   // This is to display images from the computer
   // For testing use this
-  idToSrcMap = {
+  srcMapSet = {
     0: image1,
     1: image2,
     2: image1,
     3: image2,
     4: image1,
+    5: image2,
+    6: image1,
+    7: image2,
+    8: image1,
+    9: image2,
+    10: image1,
+    11: image2
+  };
+
+  // srcMapSet = {
+  //   0: lowRes,
+  //   1: lowRes,
+  //   2: lowRes,
+  //   3: lowRes,
+  //   4: lowRes,
+  //   5: lowRes,
+  //   6: lowRes,
+  //   7: lowRes,
+  //   8: lowRes,
+  //   9: lowRes,
+  //   10: lowRes,
+  //   11: lowRes
+  // };
+
+  // This is to display images from the computer
+  // For testing use this
+  srcMapArt = {
+    0: image2,
+    1: image2,
+    2: image2,
+    3: image2,
+    4: image2,
     5: image2
   };
 }
