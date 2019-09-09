@@ -94,7 +94,7 @@ function Image(props) {
 
   return (
     <div className="row min-vw-50">
-      <div className="filler"></div>
+      {/* <div className="filler"></div> */}
       <div className="col mt-2 mb-5">
         <LazyLoad
           offsetVertical={1800}
