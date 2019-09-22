@@ -1,8 +1,6 @@
 import image1 from "../../assets/main-images/1/800.jpg";
 import image2 from "../../assets/main-images/2/800.jpg";
 
-import lowRes from "../../assets/quickImage/1.jpg";
-
 class srcInterface {
   urlBase = "https://res.cloudinary.com/waterscheiddesign/";
 
@@ -42,21 +40,6 @@ class srcInterface {
     10: image1,
     11: image2
   };
-
-  // srcMapSet = {
-  //   0: lowRes,
-  //   1: lowRes,
-  //   2: lowRes,
-  //   3: lowRes,
-  //   4: lowRes,
-  //   5: lowRes,
-  //   6: lowRes,
-  //   7: lowRes,
-  //   8: lowRes,
-  //   9: lowRes,
-  //   10: lowRes,
-  //   11: lowRes
-  // };
 
   // This is to display images from the computer
   // For testing use this

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Image.css";
 
 /*
@@ -34,73 +34,10 @@ SOFTWARE.
 import LazyLoad from "react-lazy-load";
 
 function Image(props) {
-  console.log("id", props.id);
-  console.log("props", props);
-  const [width, setWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
-
-  // let img = (
-  //   <img
-  //     // src={"../../assets/main-images/" + (props.id + 1 + "/800.jpg")}
-  //     src={"src/assets/main-images/" + (props.id + 1 + "/800.jpg")}
-  //     alt="Alt text here"
-  //     width="42"
-  //     height="42"
-  //   />
-  // );
-
-  // console.log("Image tag", img);
-
-  /*
-  return (
-    <div>
-      <img
-        className="mt-2 mb-2 img-fluid"
-        src={props.src}
-        alt="Alt text here"
-        width="1300"
-        height="600"
-      />
-    </div>
-  );
-  */
-
-  //  <img
-  //  className="mt-2 mb-2 img-fluid"
-  //  src={props.src}
-  //  alt="Alt text here"
-  //  width="1300"
-  //  height="600"
-  // />
-
-  /*
-  <img
-        className="mt-2 mb-2 img-fluid"
-        src={props.src}
-        alt="Alt text here"
-        width="1300"
-        height="600"
-      />
-  */
-
-  //className="img-container mt-2 mb-2 img-fluid"
-  //className="mt-2 mb-5 img-responsive "
-
   return (
     <div className="row min-vw-50">
-      {/* <div className="filler"></div> */}
       <div className="col mt-2 mb-5">
-        <LazyLoad
-          offsetVertical={1800}
-          onContentVisible={() => console.log("Lazyloaded id", props.id)}
-          throttle={1}
-        >
+        <LazyLoad offsetVertical={1800} throttle={1}>
           <img
             className="img-fluid"
             src={props.src}

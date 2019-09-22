@@ -9,9 +9,8 @@ import srcInterface from "../../Interfaces/images/if_images";
 
 class SetDesign extends Component {
   state = {};
-  //imageSrcInterface = new srcInterface();
+
   render() {
-    // return <div>SetDesign placeholder</div>;
     return (
       <ImageContainer
         imageCount={12}

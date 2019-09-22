@@ -256,7 +256,12 @@ class Resume extends Component {
         <div className="ml-5 mr-5" style={{ background: contentColor }}>
           <div className="pb-4">{this.headerContent}</div>
 
-          <a href="Path_to_file" download="Resume_Scheid">
+          <a
+            href="https://res.cloudinary.com/waterscheiddesign/image/upload/v1568526042/C_Scheid_Resume_2019.pdf"
+            download=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className={commonIndent + " btn-primary mb-4"}>PDF</button>
           </a>
 
