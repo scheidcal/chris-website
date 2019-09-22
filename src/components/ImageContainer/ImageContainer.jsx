@@ -16,13 +16,12 @@ class ImageContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.state.imageCount = props.imageCount;
+    this.state.imageCount = props.imageSrcMap.length;
 
     let images = [];
-    for (let i = 0; i < props.imageCount; i++) {
+    for (let i = 0; i < this.state.imageCount; i++) {
       let temp = {};
       temp.src = props.imageSrcMap[i];
-
       images.push(temp);
     }
     this.state.images = images;
