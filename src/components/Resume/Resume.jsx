@@ -2,263 +2,227 @@
 import React, { Component } from "react";
 import "./Resume.css";
 
-const headerContentClasses = "mb-2 ml-2";
-const expertiseContentClasses = "mb-3 ml-2";
-const workContentClasses = "mb-3";
-const educationContentClasses = "mb-3 ml-4";
+// Data.js holds the film and com/MusicVideos data
+import { cMVData, filmData } from "./Data.js";
 
-// const headerColor = { background: "#527ca6" };
-// const expertiseColor = { background: "#a65252" };
-// const workColor = { background: "#52a67c" };
-// const educationColor = { background: "#527ca6" };
+/*
+Sections in this file
 
-const content = "#f0f0f0";
+CONTACT                         con
+PROFESSIONAL AFFILIATIONS       pA
+EXPERTISE                       ex
+COMMERCIALS & MUSIC VIDEOS      cMV   (Data.js holds some content for this section)
+FEATURE FILMS                   film  (Data.js holds some content for this section)
+EDUCATION                       ed
 
-const headerColor = { background: content };
-const expertiseColor = { background: content };
-const workColor = { background: content };
-const educationColor = { background: content };
+*/
 
-//0077ea
-// const bg = { background: "#234f5d" };
+const commonLeftAndBottomMargin = "mb-1 ml-2";
+
+const contentColor = "#f0f0f0";
+
+const commonIndent = "ml-2";
 
 class Resume extends Component {
   state = {};
 
-  header = (
-    <header className="mb-4">
-      <h1 className="mb-3 ml-2">Chris Scheid</h1>
-      <div>
-        <li className={headerContentClasses}>ADG Local 800</li>
-
-        <li className={headerContentClasses}>Art Director</li>
-
-        <li className={headerContentClasses}>Assistant Art Director</li>
-
-        <li className={headerContentClasses}>Set Designer</li>
-
-        <li className={headerContentClasses}>cscheid.design@gmail.com</li>
-
-        <li className={headerContentClasses}>(818) 963-0675</li>
-
-        <li className={headerContentClasses}>ADG member profile page:</li>
-
-        <li className={headerContentClasses}>IMDB: www.addLinkHere.com</li>
-      </div>
+  headerContent = (
+    <header className={commonLeftAndBottomMargin}>
+      <h2>Chris Scheid</h2>
+      <p>Set Design & Art Direction</p>
+      <hr />
     </header>
   );
+  conContent = (
+    <section className={commonLeftAndBottomMargin}>
+      <h5>CONTACT</h5>
+      <p className={commonIndent}>cscheid.design@gmail.com</p>
+      <p className={commonIndent}>
+        Art Directors Guild Profile:
+        <a
+          href="https://adg.org/directory/5765-christopher-scheid/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-2"
+        >
+          adg.org
+        </a>
+      </p>
+      <p className={commonIndent}>(818)963-0675</p>
+    </section>
+  );
 
-  expertise = (
-    <section className="mb-4">
-      <h1 className="mb-3 ml-2">Expertise</h1>
+  pAContent = (
+    <section className={commonLeftAndBottomMargin}>
+      <h5>PROFESSIONAL AFFILIATIONS</h5>
+      <p className={commonIndent}>
+        MEMBER, Art Director, Art Directors Guild, IATSE Local 800
+      </p>
+    </section>
+  );
+  exContent = (
+    <section className={commonLeftAndBottomMargin}>
+      <h5>EXPERTISE</h5>
       <div>
-        <li className={expertiseContentClasses}>
+        <li className={commonIndent}>
           3D design and 2D drafting in Vectorworks 2019
         </li>
-        <li className={expertiseContentClasses}>
+        <li className={commonIndent}>
           Seven Years of Experience in Commercials & Feature Films as Art
           Director, Leadman, Prop Master, and Construction Coordinator
         </li>
-        <li className={expertiseContentClasses}>
-          Coordinating & Staffing the following departments: Art Department, Set
-          Decoration, Set Construction, Props
-        </li>
-        <li className={expertiseContentClasses}>Client Approval Workflows</li>
-        <li className={expertiseContentClasses}>Budgeting and Scheduling</li>
+        <li className={commonIndent}>Coordinating & Staffing</li>
+        <li className={commonIndent}>Client Approval Workflows</li>
+        <li className={commonIndent}>Budgeting and Scheduling</li>
       </div>
     </section>
   );
 
-  education = (
-    <section className="">
-      <h1 className=" ml-2">Education</h1>
-
-      <div className={educationContentClasses}>
+  edContent = (
+    <section className={commonLeftAndBottomMargin}>
+      <h5>Education</h5>
+      <div className={commonIndent}>
         University of California, Berkeley
         <div>B.A. Film Studies, College of Letters and Science</div>
       </div>
-
-      <div className={educationContentClasses}>
+      <div className={commonIndent}>
         University of Bologna
         <div> Italy Certificate of Completion, UC Education Abroad Program</div>
       </div>
     </section>
   );
-  workContent = [
-    {
-      title: "Dueces",
-      production: "Flavor Unit Entertainment",
-      director: "Jamal Hill",
-      position: "Art Director",
-      row: "0",
-      column: "0"
-    },
-    {
-      title: "Juveniles",
-      production: "Disruptive LA",
-      director: "Nico Sabenorio",
-      position: "Art Director",
-      row: "0",
-      column: "1"
-    },
-    {
-      title: "The Curse of Sleeping Beauty",
-      production: "Briar Rose Productions",
-      director: "Pearry Teo",
-      position: "Art Director",
-      row: "0",
-      column: "2"
-    },
-    {
-      title: "My Scientology Movie",
-      production: "BBC Films",
-      director: "John Dower",
-      position: "Construction Coordinator",
-      row: "1",
-      column: "0"
-    },
-    {
-      title: "Sun Dogs ",
-      production: "Caviar",
-      director: "Jennifer Morrison",
-      position: "Leadman",
-      row: "1",
-      column: "1"
-    },
-    {
-      title: "Dreamland",
-      production: "Beachwood Park Films",
-      director: "Robert Schwartzman",
-      position: "Leadman",
-      row: "1",
-      column: "2"
-    },
-    {
-      title: "The Nightstalker ",
-      production: "MRB Productions",
-      director: "Megan Griffiths",
-      position: "Leadman",
-      row: "2",
-      column: "0"
-    },
-    {
-      title: "Imperial Dreams ",
-      production: "Sundance Film Foundation",
-      director: "Malik Vitthal",
-      position: "Leadman / Set Decorator",
-      row: "2",
-      column: "1"
-    },
-    {
-      title: "8989 Redstone",
-      production: "New Wave Entertainment",
-      director: "Jay Chapman",
-      position: "Prop Master",
-      row: "2",
-      column: "2"
-    },
-    {
-      title: "Moments of Clarity",
-      production: "Phillm Production",
-      director: "Stev Elam",
-      position: "Set Decorator",
-      row: "3",
-      column: "0"
-    },
-    {
-      title: "Raven’s Touch",
-      production: "Soul Kiss Films",
-      director: "Amy Esacove",
-      position: "Prop Master",
-      row: "3",
-      column: "1"
-    },
-    {
-      title: "Detained in the Desert",
-      production: "Real Women Have Curves Studio",
-      director: "Iliana Sosa",
-      position: "Prop Master",
-      row: "3",
-      column: "2"
-    },
-    {
-      title: "Disney Channel Promo: Ecosmith Rocks My House",
-      production: "Fictious LLC",
-      director: "Randy Bobbit",
-      position: "Art Director",
-      row: "4",
-      column: "0"
-    },
-    {
-      title: "Disney Channel / Ring-Pop: “Rock that Rock” by R5",
-      production: "Disruptive LA",
-      director: "Michel Borden",
-      position: "Art Director",
-      row: "4",
-      column: "1"
-    },
-    {
-      title: "Pepsi spot (web) - Black Knight Decoded",
-      production: "Triage Entertainment",
-      director: "Jabar Raisani",
-      position: "Art Director & Set Decorator",
-      row: "4",
-      column: "2"
-    },
-    {
-      title: "Tommy John Spot #6386",
-      production: "Smuggler",
-      director: "Guy Shelmerdine",
-      position: "Assistant Art Director",
-      row: "5",
-      column: "0"
-    }
-  ];
 
-  render() {
+  footerContent = (
+    <footer className={commonLeftAndBottomMargin}>
+      <p className="small">Print Portfolio Available on Request</p>
+    </footer>
+  );
+
+  constructColumnContentElement(data) {
     const columnCount = 2;
     let rowList = [];
     let rowObj = {};
     let partialRow = false;
     let row;
     let rowCount = 0;
-    for (let i = 0; i < this.workContent.length; i++) {
-      console.log("index, i ", i);
-      if (i === 0) {
+
+    // Data Item Element is the variable that will hold the html for the Film/MusicVideos items
+    // Each item is made inside this 'for' loop then placed in a list
+    // The list is returned where the function is called in render()
+    for (let i = 0; i < data.length; i++) {
+      if (i % columnCount === 0) {
         row = [];
         partialRow = true;
-        console.log("row created");
       }
 
-      //text-sm-center text-md-center text-lg-left
-      let workContentElement = (
-        <div className="mb-4 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-          <h5 className="font-weight-bold">{this.workContent[i].title}</h5>
-          <div className="">
-            Position:
-            <span className="ml-5">{this.workContent[i].position}</span>
-          </div>
-          <div className="">
-            Production:
-            <span className="ml-4">{this.workContent[i].production}</span>
-          </div>
-          <div className="">
-            Director:
-            <span className="ml-5">{this.workContent[i].director}</span>
-          </div>
-        </div>
-      );
+      let dataItemElement;
 
-      row.push(workContentElement);
+      // A. Construct the element for Com/MusicVideos
+      if (data[i].hasOwnProperty("link")) {
+        dataItemElement = (
+          <div
+            key={data[i].key}
+            className="mb-4 col-sm-12 col-md-6 col-lg-6 col-xl-6 "
+          >
+            <div className="font-weight-bold">{data[i].title}</div>
+            <div className="">
+              Position:
+              <span className="ml-5">{data[i].position}</span>
+            </div>
+            <div className="">
+              Production:
+              <span className="ml-4">{data[i].production}</span>
+            </div>
+            <div className="">
+              Director:
+              <span className="ml-5">{data[i].director}</span>
+            </div>
+            <div>
+              Link:
+              <a
+                className="cMVLink"
+                href={data[i].link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {data[i].link.substring(12, 35)}
+              </a>
+            </div>
+          </div>
+        );
 
-      if (i > 0 && i % columnCount === 0) {
+        // B. Construct the element for that has the production company link
+        if (data[i].hasOwnProperty("productionLink")) {
+          dataItemElement = (
+            <div
+              key={data[i].key}
+              className="mb-4 col-sm-12 col-md-6 col-lg-6 col-xl-6 "
+            >
+              <div className="font-weight-bold">{data[i].title}</div>
+              <div className="">
+                Position:
+                <span className="ml-5">{data[i].position}</span>
+              </div>
+              <div className="">
+                Production:
+                <a
+                  className="ml-4"
+                  href={data[i].link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {data[i].production}
+                </a>
+              </div>
+              <div className="">
+                Director:
+                <span className="ml-5">{data[i].director}</span>
+              </div>
+              <div>
+                Link:
+                <a
+                  className="cMVLink"
+                  href={data[i].link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {data[i].link.substring(12, 35)}
+                </a>
+              </div>
+            </div>
+          );
+        }
+      } else {
+        // C. Construct the element for the film section
+        dataItemElement = (
+          <div
+            key={data[i].key}
+            className="mb-4 col-sm-12 col-md-6 col-lg-6 col-xl-6 "
+          >
+            <div className="font-weight-bold">{data[i].title}</div>
+            <div className="">
+              Position:
+              <span className="ml-5">{data[i].position}</span>
+            </div>
+            <div className="">
+              Production:
+              <span className="ml-4">{data[i].production}</span>
+            </div>
+            <div className="">
+              Director:
+              <span className="ml-5">{data[i].director}</span>
+            </div>
+          </div>
+        );
+      }
+
+      row.push(dataItemElement);
+
+      if (i > 0 && (i - 1) % columnCount === 0) {
         rowList.push(row);
-        console.log(rowCount);
         rowObj[rowCount] = row;
         rowCount += 1;
         partialRow = false;
-        console.log("row", row);
-        console.log("row closed");
       }
     }
 
@@ -266,14 +230,9 @@ class Resume extends Component {
       rowList.push(row);
       rowObj[rowCount] = row;
       rowCount += 1;
-      console.log("row", row);
-      console.log("row closed - partial row");
     }
 
-    console.log("before  rowlist", rowList);
-
     for (let i = 0; i < rowList.length; i++) {
-      console.log("i ", i);
       rowList[i] = (
         <div className="row" key={i}>
           {rowList[i]}
@@ -281,59 +240,56 @@ class Resume extends Component {
       );
     }
 
-    console.log("After    rowlist", rowList);
+    return rowList;
+  }
 
-    console.log("Test");
+  render() {
+    let cMVColumn = this.constructColumnContentElement(cMVData);
+    let filmColumn = this.constructColumnContentElement(filmData);
 
-    Object.keys(rowObj).forEach(key => {
-      console.log("key", key);
-      rowObj[key] = <div className="row">{rowObj[key]}</div>;
-    });
-
-    console.log("rowlist", rowList);
-    console.log("rowlist.length", rowList.length);
-    console.log("rowObj", rowObj);
-
-    //   let row = (
-    //   <div className="mb-4">
-    //   <h5 className="font-weight-bold">{props.content.title}</h5>
-    //   <div className="">
-    //     Position:<span className="ml-5">{props.content.position}</span>
-    //   </div>
-    //   <div className="">
-    //     Production:<span className="ml-4">{props.content.production}</span>
-    //   </div>
-    //   <div className="">
-    //     Director:<span className="ml-5">{props.content.director}</span>
-    //   </div>
-    // </div>);
-
-    /*
-/* {this.workContent.map(workObj => {
-                return <Work content={workObj}></Work>;
-              })} */
-
+    // This is where the output is created
+    // Above are the where the sections are created
+    // This is where those sections are combined to create the resume page
+    // To make changes you should edit the relivent section above
     return (
-      <div class="text-left body-content">
-        <div className="ml-5 mr-5">
-          <div className="pb-4" style={headerColor}>
-            {this.header}
-          </div>
-          <div className="pb-4" style={expertiseColor}>
-            {this.expertise}
-          </div>
-          <div className="pb-4" style={workColor}>
-            <h2>Feature Films, Commercials & Music Videos</h2>
-            <div class="container">{rowList[0]}</div>
-            {/* <div class="container">{rowList}</div> */}
-            {/* <div class="fluid-container">{rowObj}</div> */}
-          </div>
-          <div className="pb-4" style={educationColor}>
-            {this.education}
-          </div>
-          <p className="small" style={educationColor}>
-            Print Portfolio Available on Request
-          </p>
+      <div className="text-left body-content">
+        <div className="ml-5 mr-5" style={{ background: contentColor }}>
+          <div className="pb-4">{this.headerContent}</div>
+
+          <a href="Path_to_file" download="Resume_Scheid">
+            <button className={commonIndent + " btn-primary mb-4"}>PDF</button>
+          </a>
+
+          <div className="pb-4">{this.conContent}</div>
+
+          <div className="pb-4">{this.pAContent}</div>
+
+          <div className="pb-4">{this.exContent}</div>
+
+          <section className={commonLeftAndBottomMargin}>
+            <h5>COMMERCIALS & MUSIC VIDEOS</h5>
+            <div className="container">{cMVColumn}</div>
+          </section>
+
+          <section className={commonLeftAndBottomMargin}>
+            <h5>FEATURE FILMS</h5>
+            <div className="container">{filmColumn}</div>
+            {/* IMDB PROFILE —> hyperlinked to https://www.imdb.com/name/nm2471814/ For the format, justified left so it lines up with credits.  */}
+            <div className="mb-4 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+              <a
+                id="imdbLink"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.imdb.com/name/nm2471814/"
+              >
+                imdb profile
+              </a>
+            </div>
+          </section>
+
+          <div className={commonLeftAndBottomMargin}>{this.edContent}</div>
+
+          <div className="ml-2 mt-4 pb-2 ">{this.footerContent}</div>
         </div>
       </div>
     );
