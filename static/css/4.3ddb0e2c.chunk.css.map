@@ -1,0 +1,1 @@
+{"version":3,"sources":["Resume.css"],"names":[],"mappings":"AAAA,SACE,eACF,CAEA,GACE,gBAAiB,CACjB,iBAAmB,CACnB,iBAAmB,CACnB,kBACF","file":"4.3ddb0e2c.chunk.css","sourcesContent":[".cMVLink {\n  margin-left: 5em;\n}\n\nhr {\n  border-width: 3px;\n  border-color: black;\n  margin-left: -0.5em;\n  margin-bottom: 0.5em;\n}\n"]}
