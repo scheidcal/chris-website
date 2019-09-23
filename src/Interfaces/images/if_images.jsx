@@ -15,7 +15,7 @@ class srcInterface {
     this.setDesignBaseURL + "image04.jpg",
     this.setDesignBaseURL + "image05.jpg",
     this.setDesignBaseURL + "image06.jpg",
-    //this.setDesignBaseURL + "image07.jpg",//no pages
+    this.setDesignBaseURL + "image07.jpg", //no pages
     this.setDesignBaseURL + "image08.jpg",
     this.setDesignBaseURL + "image09.jpg",
     this.setDesignBaseURL + "image10.jpg",
