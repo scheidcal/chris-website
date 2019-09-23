@@ -5,11 +5,128 @@ img-container {
   background: #fff;
 }
 
-img {
-  /* position: absolute; */
-  /* width: 100%; */
+@media screen and (min-width: 1401px) {
+  .LazyLoad .is-visible {
+    height: 700px;
+  }
+  img {
+    height: 100%;
+  }
+  .row {
+    margin-bottom: 1em;
+    height: 750px;
+  }
 }
 
-.filler {
-  height: 50px;
+/* @media screen and (min-width: 1001px) and (max-width: 1400px) { */
+@media screen and (max-width: 1400px) {
+  .LazyLoad .is-visible {
+    height: 700px;
+  }
+  img {
+    height: 100%;
+  }
+  .row {
+    margin-bottom: -9em;
+    height: 900px;
+  }
 }
+
+@media screen and (max-width: 1200px) {
+  .LazyLoad .is-visible {
+    height: 650px;
+  }
+  img {
+    height: 100%;
+  }
+  .row {
+    margin-bottom: 0em;
+    height: 650px;
+  }
+}
+
+/* @media screen and (min-width: 801px) and (max-width: 1000px) { */
+@media screen and (max-width: 1000px) {
+  .LazyLoad .is-visible {
+    height: 500px;
+  }
+  img {
+    height: 100%;
+  }
+  .row {
+    margin-bottom: -9em;
+    height: 600px;
+  }
+}
+
+/* @media screen and (min-width: 601px) and (max-width: 800px) { */
+@media screen and (max-width: 750px) {
+  .LazyLoad .is-visible {
+    height: 400px;
+  }
+  img {
+    height: 100%;
+  }
+
+  .row {
+    margin-bottom: -3em;
+    height: 400px;
+  }
+}
+
+/* @media screen and (min-width: 301px) and (max-width: 600px) { */
+@media screen and (max-width: 600px) {
+  .LazyLoad .is-visible {
+    height: 200px;
+  }
+  img {
+    height: 100%;
+  }
+
+  .row {
+    margin-bottom: 1em;
+    height: 350px;
+  }
+}
+
+/* @media screen and (min-width: 0px) and (max-width: 300px) { */
+@media screen and (max-width: 450px) {
+  .LazyLoad .is-visible {
+    height: 200px;
+  }
+  img {
+    height: 100%;
+  }
+
+  .row {
+    margin-bottom: 1em;
+    height: 275px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .LazyLoad .is-visible {
+    height: 200px;
+  }
+  img {
+    height: 100%;
+  }
+
+  .row {
+    margin-bottom: 1em;
+    height: 160px;
+  }
+}
+
+/*
+@media screen and ( min-width: 1025px ) {
+  img {
+    height: 600px;
+  }
+}
+
+@media screen and ( min-width: 1025px ) {
+  img {
+    height: 600px;
+  }
+} */

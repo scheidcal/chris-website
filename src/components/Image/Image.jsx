@@ -33,11 +33,19 @@ SOFTWARE.
 */
 import LazyLoad from "react-lazy-load";
 
+// import { forceCheck } from "react-lazyload";
+
 function Image(props) {
   return (
     <div className="row min-vw-50">
       <div className="col mt-2 mb-5">
-        <LazyLoad offsetVertical={1800} throttle={1}>
+        <LazyLoad
+          offset={10}
+          throttle={1}
+          // onContentVisible={() => console.log("loaded image" + props.id)}
+          height="700px"
+          // height="100%"
+        >
           <img
             className="img-fluid"
             src={props.src}

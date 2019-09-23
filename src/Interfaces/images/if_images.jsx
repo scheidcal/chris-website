@@ -9,18 +9,13 @@ class srcInterface {
   artDirBaseUrl =
     "https://res.cloudinary.com/waterscheiddesign/image/upload/v1566416248/Art%20Director/";
 
-  // Uncomment this (and remove the one below) to display images using the cloud host.
-  // For testing we shouldn't do this because it'll eat at the bandwidth limit used
-
-  //https://res.cloudinary.com/waterscheiddesign/image/upload/v1568643390/Set%20Design%20%28main%20page%29/image01.jpg
-  //https://res.cloudinary.com/waterscheiddesign/image/upload/v1568662057/Set%20Design%20%28main%20page%29/image02.jpg
-
-  srcMapSet2 = [
+  // This is to display images from cloudinary
+  srcMapSet = [
     this.setDesignBaseURL + "image03.jpg",
     this.setDesignBaseURL + "image04.jpg",
     this.setDesignBaseURL + "image05.jpg",
     this.setDesignBaseURL + "image06.jpg",
-    this.setDesignBaseURL + "image07.jpg",
+    //this.setDesignBaseURL + "image07.jpg",//no pages
     this.setDesignBaseURL + "image08.jpg",
     this.setDesignBaseURL + "image09.jpg",
     this.setDesignBaseURL + "image10.jpg",
@@ -48,44 +43,31 @@ class srcInterface {
 
   // This is to display images from the computer
   // For testing use this
-  srcMapSet3 = {
-    0: image1,
-    1: image2,
-    2: image1,
-    3: image2,
-    4: image1,
-    5: image2,
-    6: image1,
-    7: image2,
-    8: image1,
-    9: image2,
-    10: image1,
-    11: image2
-  };
-  srcMapSet = [
-    image1,
-    image2,
-    image1,
-    image2,
-    image1,
-    image2,
-    image1,
-    image2,
-    image1,
-    image2,
-    image1,
-    image2
-  ];
+  // srcMapSet = [
+  //   image1,
+  //   image2,
+  //   image1,
+  //   image2,
+  //   image1,
+  //   image2,
+  //   image1,
+  //   image2,
+  //   image1,
+  //   image2,
+  //   image1,
+  //   image2
+  // ];
 
+  // This is to display images from cloudinary
   srcMapArt = [
-    // this.artDirBaseUrl + "Art_Direction_JPEG-2000_page_3_fqrawj.jp2",
-    // this.artDirBaseUrl + "Art_Direction_JPEG-2000_page_4_len3d7.jp2",
-    // this.artDirBaseUrl + "Art_Direction_JPEG-2000_page_5_ngfhiw.pdf",
-    // this.artDirBaseUrl + "Art_Direction_JPEG-2000_page_6_w3bvlr.jp2"
+    this.artDirBaseUrl + "ADimage04",
+    this.artDirBaseUrl + "ADimage05",
+    this.artDirBaseUrl + "ADimage06",
+    this.artDirBaseUrl + "ADimage07"
   ];
 
   // This is to display images from the computer
   // For testing use this
-  srcMapArtTesting = [image2, image2, image2, image2, image2, image2];
+  // srcMapArtTesting = [image2, image2, image2, image2, image2, image2];
 }
 export default srcInterface;

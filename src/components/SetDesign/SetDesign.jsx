@@ -6,10 +6,9 @@ import Image from "../Image/Image";
 
 import srcInterface from "../../Interfaces/images/if_images";
 
-import setDesignImage1 from "../../assets/setDesignImages/setDesignImage01.jpg";
-import setDesignImage2 from "../../assets/setDesignImages/setDesignImage02.jpg";
-
-//https://res.cloudinary.com/waterscheiddesign/image/upload/v1568643390/Set%20Design%20%28main%20page%29/image01.jpg
+import setDesignImage1 from "../../assets/setDesignImages/image001.jpg";
+import setDesignImage2 from "../../assets/setDesignImages/image01.jpeg";
+import setDesignImage3 from "../../assets/setDesignImages/image02.jpeg";
 
 class SetDesign extends Component {
   state = {};
@@ -17,9 +16,12 @@ class SetDesign extends Component {
   render() {
     return (
       <section className="text-center body-content container">
-        <Image src={setDesignImage1}></Image>
-        <Image src={setDesignImage2}></Image>
-        <ImageContainer imageSrcMap={new srcInterface().srcMapSet} />
+        <Image key={0} id={0} src={setDesignImage1}></Image>
+        <Image key={1} id={1} src={setDesignImage2}></Image>
+        <Image key={2} id={2} src={setDesignImage3}></Image>
+        <div>
+          <ImageContainer imageSrcMap={new srcInterface().srcMapSet} />
+        </div>
       </section>
     );
   }

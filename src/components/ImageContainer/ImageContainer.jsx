@@ -30,12 +30,12 @@ class ImageContainer extends Component {
   render() {
     let imageArray = [];
     for (let i = 0; i < this.state.images.length; i++) {
-      imageArray.push(<Image key={i} id={i} src={this.state.images[i].src} />);
+      imageArray.push(
+        <Image key={i + 3} id={i + 3} src={this.state.images[i].src} />
+      );
     }
 
-    return (
-      <div className="text-center body-content container">{imageArray}</div>
-    );
+    return <div>{imageArray}</div>;
   }
 }
 

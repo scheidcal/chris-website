@@ -6,8 +6,9 @@ import Image from "../Image/Image";
 
 import srcInterface from "../../Interfaces/images/if_images";
 
-import artDirImage1 from "../../assets/artDirImages/artDirectionImage1.jpg";
-import artDirImage2 from "../../assets/artDirImages/artDirectionImage2.jpg";
+import artDirImage1 from "../../assets/artDirImages/ADimage01.jpg";
+import artDirImage2 from "../../assets/artDirImages/ADimage02.jpg";
+import artDirImage3 from "../../assets/artDirImages/ADimage03.jpg";
 
 class ArtDirection extends Component {
   state = {};
@@ -16,6 +17,7 @@ class ArtDirection extends Component {
       <section className="text-center body-content container">
         <Image src={artDirImage1}></Image>
         <Image src={artDirImage2}></Image>
+        <Image src={artDirImage3}></Image>
         <ImageContainer imageSrcMap={new srcInterface().srcMapArt} />
       </section>
     );
