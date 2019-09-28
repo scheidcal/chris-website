@@ -1,5 +1,5 @@
-import image1 from "../../assets/main-images/1/800.jpg";
-import image2 from "../../assets/main-images/2/800.jpg";
+//import image1 from "../../assets/main-images/1/800.jpg";
+//import image2 from "../../assets/main-images/2/800.jpg";
 
 class srcInterface {
   urlBase = "https://res.cloudinary.com/waterscheiddesign/";
