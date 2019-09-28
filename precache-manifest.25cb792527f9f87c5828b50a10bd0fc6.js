@@ -1,47 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1d33fbc150bb697b8d401efe407c3c1d",
+    "revision": "8494439d4b935e35a7c1fc5d62e0f33b",
     "url": "/chris-website/index.html"
   },
   {
-    "revision": "feb93e4b2c63b25e60f8",
+    "revision": "01379c9afadbe418ba60",
     "url": "/chris-website/static/css/3.2e75a12f.chunk.css"
   },
   {
-    "revision": "2a333a5af068f01da33b",
+    "revision": "208bdb1d72769ebf08a1",
     "url": "/chris-website/static/css/4.3ddb0e2c.chunk.css"
   },
   {
-    "revision": "9667e1f47716deae6d39",
+    "revision": "169bfa9016aefdf3c0de",
     "url": "/chris-website/static/css/main.abe38634.chunk.css"
   },
   {
-    "revision": "cfe995f28916af724a9e",
-    "url": "/chris-website/static/js/2.fd0f1677.chunk.js"
+    "revision": "9343cc1709a99c887491",
+    "url": "/chris-website/static/js/2.12504bca.chunk.js"
   },
   {
-    "revision": "feb93e4b2c63b25e60f8",
-    "url": "/chris-website/static/js/3.b5b3ee8d.chunk.js"
+    "revision": "01379c9afadbe418ba60",
+    "url": "/chris-website/static/js/3.96542356.chunk.js"
   },
   {
-    "revision": "2a333a5af068f01da33b",
-    "url": "/chris-website/static/js/4.964183ab.chunk.js"
+    "revision": "208bdb1d72769ebf08a1",
+    "url": "/chris-website/static/js/4.b6f4e079.chunk.js"
   },
   {
-    "revision": "9667e1f47716deae6d39",
-    "url": "/chris-website/static/js/main.9eade8c9.chunk.js"
+    "revision": "169bfa9016aefdf3c0de",
+    "url": "/chris-website/static/js/main.09266578.chunk.js"
   },
   {
-    "revision": "4f8b08665a2d01d63579",
-    "url": "/chris-website/static/js/runtime~main.a24fe394.js"
-  },
-  {
-    "revision": "3f266d8dd037984e592ada7684acd052",
-    "url": "/chris-website/static/media/800.3f266d8d.jpg"
-  },
-  {
-    "revision": "b4345a0fdc11e2eb8944ac55781e0c8c",
-    "url": "/chris-website/static/media/800.b4345a0f.jpg"
+    "revision": "982af81e0106ee7abd26",
+    "url": "/chris-website/static/js/runtime~main.16668b42.js"
   },
   {
     "revision": "fddc69656f34816cca57c06bd93e7121",
