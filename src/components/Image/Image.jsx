@@ -37,7 +37,7 @@ import LazyLoad from "react-lazy-load";
 
 function Image(props) {
   return (
-    <div className="row min-vw-50">
+    <div className="row min-vw-50 image-row">
       <div className="col mt-2 mb-5">
         <LazyLoad
           offset={10}

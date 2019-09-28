@@ -1,5 +1,5 @@
 import React, { Component, Suspense, lazy } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 
@@ -20,10 +20,18 @@ class App extends Component {
       <Router>
         <NavBar />
         <Suspense fallback={<div>Loading...</div>}>
-          <Route exact path="/" component={SetDesign} />
-          <Route path="/SetDesign" component={SetDesign} />
-          <Route path="/ArtDirection" component={artDirection} />
-          <Route path="/Resume" component={resume} />
+          <Switch>
+            <Route exact path="/" component={SetDesign} />
+          </Switch>
+          <Switch>
+            <Route exact path="/SetDesign" component={SetDesign} />
+          </Switch>
+          <Switch>
+            <Route exact path="/ArtDirection" component={artDirection} />
+          </Switch>
+          <Switch>
+            <Route exact path="/Resume" component={resume} />
+          </Switch>
         </Suspense>
       </Router>
     );
