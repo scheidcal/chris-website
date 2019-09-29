@@ -257,7 +257,7 @@ class Resume extends Component {
           <div className="pb-4">{this.headerContent}</div>
 
           <a
-            href="https://res.cloudinary.com/waterscheiddesign/image/upload/v1568526042/C_Scheid_Resume_2019.pdf"
+            href="https://res.cloudinary.com/waterscheiddesign/image/upload/v1569182935/RESUME%20ASSETS/C%20Scheid%20Resume%202019"
             download=""
             target="_blank"
             rel="noopener noreferrer"
@@ -279,7 +279,6 @@ class Resume extends Component {
           <section className={commonLeftAndBottomMargin}>
             <h5>FEATURE FILMS</h5>
             <div className="container">{filmColumn}</div>
-            {/* IMDB PROFILE —> hyperlinked to https://www.imdb.com/name/nm2471814/ For the format, justified left so it lines up with credits.  */}
             <div className="mb-4 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
               <a
                 id="imdbLink"
