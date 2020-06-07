@@ -34,7 +34,6 @@ function NavBar() {
         {/* <div>
           <h1>Chris Scheid </h1>
           <h3>WaterScheid.la@gmail.com</h3>
-          <h3>(818) 963-0675</h3>
         </div> */}
         {/* <span class="navbar-text navbar-light bg-light"> */}
         <span className="navbar-text navbar-light bg-light">
