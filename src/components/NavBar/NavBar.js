@@ -40,7 +40,6 @@ function NavBar() {
         <span className="navbar-text navbar-light bg-light">
           <h2>Chris Scheid</h2> <div>Set Design & Art Direction</div>
           <div>cscheid.design@gmail.com</div>
-          <div> (818) 963-0675</div>
         </span>
       </nav>
     </div>

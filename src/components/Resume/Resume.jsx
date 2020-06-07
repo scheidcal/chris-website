@@ -48,7 +48,6 @@ class Resume extends Component {
           adg.org
         </a>
       </p>
-      <p className={commonIndent}>(818)963-0675</p>
     </section>
   );
 
