@@ -1,3 +1,26 @@
+cs-website edit steps:
+
+// Follow the link if error if npm start fails
+https://stackoverflow.com/questions/42308879/npm-err-code-elifecycle
+
+// Edit master branch, push changes
+
+// Deploy
+npm run deploy
+
+
+change to gh-pages branch
+
+// Add CNAME 
+ 
+// index.html  - fix paths
+delete:  "/chris-website/"
+example: https://cscheid.design/chris-website/manifest.json
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
