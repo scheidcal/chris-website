@@ -6,9 +6,9 @@
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-lazy-load": "^3.0.13",
+    "react-lazy-load": "^3.1.13",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.1.1"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
