@@ -93,7 +93,7 @@ class Resume extends Component {
 
   footerContent = (
     <footer className={commonLeftAndBottomMargin}>
-      <p className="small">Print Portfolio Available on Request</p>
+      <p className="small">Print Portfolio and Resume Available on Request</p>
     </footer>
   );
 
@@ -254,15 +254,6 @@ class Resume extends Component {
       <div className="text-left body-content">
         <div className="ml-5 mr-5" style={{ background: contentColor }}>
           <div className="pb-4">{this.headerContent}</div>
-
-          <a
-            href="https://res.cloudinary.com/waterscheiddesign/image/upload/v1569182935/RESUME%20ASSETS/C%20Scheid%20Resume%202019"
-            download=""
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className={commonIndent + " btn-primary mb-4"}>PDF</button>
-          </a>
 
           <div className="pb-4">{this.conContent}</div>
 
