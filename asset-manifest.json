@@ -1,27 +1,34 @@
 {
   "files": {
     "main.css": "/chris-website/static/css/main.abe38634.chunk.css",
-    "main.js": "/chris-website/static/js/main.8173e0ed.chunk.js",
-    "main.js.map": "/chris-website/static/js/main.8173e0ed.chunk.js.map",
-    "runtime~main.js": "/chris-website/static/js/runtime~main.6d10a45e.js",
-    "runtime~main.js.map": "/chris-website/static/js/runtime~main.6d10a45e.js.map",
-    "static/js/2.d6d1e85a.chunk.js": "/chris-website/static/js/2.d6d1e85a.chunk.js",
-    "static/js/2.d6d1e85a.chunk.js.map": "/chris-website/static/js/2.d6d1e85a.chunk.js.map",
+    "main.js": "/chris-website/static/js/main.0bf6fce1.chunk.js",
+    "main.js.map": "/chris-website/static/js/main.0bf6fce1.chunk.js.map",
+    "runtime-main.js": "/chris-website/static/js/runtime-main.622cad6f.js",
+    "runtime-main.js.map": "/chris-website/static/js/runtime-main.622cad6f.js.map",
+    "static/js/2.771c3441.chunk.js": "/chris-website/static/js/2.771c3441.chunk.js",
+    "static/js/2.771c3441.chunk.js.map": "/chris-website/static/js/2.771c3441.chunk.js.map",
     "static/css/3.2e75a12f.chunk.css": "/chris-website/static/css/3.2e75a12f.chunk.css",
-    "static/js/3.4f916cc6.chunk.js": "/chris-website/static/js/3.4f916cc6.chunk.js",
-    "static/js/3.4f916cc6.chunk.js.map": "/chris-website/static/js/3.4f916cc6.chunk.js.map",
+    "static/js/3.d8f422b8.chunk.js": "/chris-website/static/js/3.d8f422b8.chunk.js",
+    "static/js/3.d8f422b8.chunk.js.map": "/chris-website/static/js/3.d8f422b8.chunk.js.map",
     "static/css/4.3ddb0e2c.chunk.css": "/chris-website/static/css/4.3ddb0e2c.chunk.css",
-    "static/js/4.93506aaa.chunk.js": "/chris-website/static/js/4.93506aaa.chunk.js",
-    "static/js/4.93506aaa.chunk.js.map": "/chris-website/static/js/4.93506aaa.chunk.js.map",
+    "static/js/4.ca72d689.chunk.js": "/chris-website/static/js/4.ca72d689.chunk.js",
+    "static/js/4.ca72d689.chunk.js.map": "/chris-website/static/js/4.ca72d689.chunk.js.map",
     "index.html": "/chris-website/index.html",
-    "precache-manifest.7283d8da148a1e9112d6e295dacdfd32.js": "/chris-website/precache-manifest.7283d8da148a1e9112d6e295dacdfd32.js",
+    "precache-manifest.e86d464b86f9382cdd095e5278e9cf2d.js": "/chris-website/precache-manifest.e86d464b86f9382cdd095e5278e9cf2d.js",
     "service-worker.js": "/chris-website/service-worker.js",
     "static/css/3.2e75a12f.chunk.css.map": "/chris-website/static/css/3.2e75a12f.chunk.css.map",
     "static/css/4.3ddb0e2c.chunk.css.map": "/chris-website/static/css/4.3ddb0e2c.chunk.css.map",
     "static/css/main.abe38634.chunk.css.map": "/chris-website/static/css/main.abe38634.chunk.css.map",
+    "static/js/2.771c3441.chunk.js.LICENSE.txt": "/chris-website/static/js/2.771c3441.chunk.js.LICENSE.txt",
     "static/media/ADimage02.jpg": "/chris-website/static/media/ADimage02.1174f5f7.jpg",
     "static/media/ADimage03.jpg": "/chris-website/static/media/ADimage03.33ae0f93.jpg",
     "static/media/image01.jpeg": "/chris-website/static/media/image01.216394bd.jpeg",
     "static/media/image02.jpeg": "/chris-website/static/media/image02.c2b7200b.jpeg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.622cad6f.js",
+    "static/js/2.771c3441.chunk.js",
+    "static/css/main.abe38634.chunk.css",
+    "static/js/main.0bf6fce1.chunk.js"
+  ]
 }
